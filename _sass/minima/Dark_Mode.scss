@@ -2,29 +2,38 @@ $high-emph: rgba(white, 0.87);
 $med-emph: rgba(white, 0.69); 
 $low-emph: rgba(white, 0.38);
 $dark-grey : #121212; 
+$cm-pink: #ff09a1;
+$cm-yellow: #ffde59;
+$cm-brown: #452311;
+
 // $dark-grey : #1F1B24;
 $overlay: mix($dark-grey, white, 95%);
 $overlay-light: mix($dark-grey, white, 86%);
 
-html, body, input, textarea, select, button {   
-  color: $high-emph !important;
-  background-color: $dark-grey !important;
+html, body, input, textarea, select {   
+  color: $cm-pink !important;
+  background-color: $cm-yellow !important;
+}
+
+button {
+    color: $cm-yellow !important;
+    background-color: $cm-pink !important;
 }
 
 a {
-    color: rgb(75, 186, 255) !important;
+    color: rgb(90, 10, 251) !important;
 }
 
 a:hover {
-    color:$high-emph !important;
+    color:rgb(177, 145, 240) !important;
 }
 
 .site-title, .site-title:visited, .site-nav, .page-link {
-    color: $high-emph !important;
+    color: $cm-pink !important;
 }
 
 .site-nav {
-    background-color: $dark-grey;
+    background-color: $cm-yellow;
     border-color: $overlay-light;
 }
 
@@ -34,42 +43,42 @@ a:hover {
 
 pre, code {
     // BVas a lighter colour to better highlight short code words
-    border-color: $overlay-light;
-    background-color: $overlay;
+    border-color: $cm-brown;
+    background-color: $cm-brown;
 }
 
 .page-description {
-    color: $med-emph;
+    color: $cm-pink;
 }
 
 .post-meta {
-    color: $low-emph;
+    color: $cm-pink;
 }
 
 .post-content p, .post-content li {
-    color: $med-emph;
+    color: $cm-pink;
 }
 
 .btn {
     background-color: $overlay !important;
-    color: $high-emph !important;
+    color: $cm-pink !important;
     border-color: $overlay-light !important;
 }
 
 .btn:hover {
-    background-color: $dark-grey !important;
+    background-color: $cm-pink!important;
 }
 
 table th{
     background-color: $overlay;
     border-color: $overlay-light;
-    color: $high-emph;
+    color: $cm-pink;
 }
 
 table td{
     background-color: $dark-grey;
     border-color: $overlay-light;
-    color: $med-emph;
+    color: $cm-pink;
 }
 
 .flash {
@@ -88,7 +97,7 @@ canvas {
 }
 
 li .post-meta-description {
-    color: $med-emph !important;
+    color: $cm-pink !important;
 }
 
 .search-result-preview{

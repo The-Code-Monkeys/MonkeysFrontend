@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            font-size: 24px;
+            font-weight: 1000;
+            width: 500px;
+            height: 250px;
+            border-radius: 1000px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <button onclick="connect()" style="background-color: red;">Connect</button>
+        <h2>Waitlist: <span id="waitlistCount">XX</span></h2>
+    </div>
+
+    <script>
+        // Replace XX with the actual number for the waitlist
+        document.getElementById('waitlistCount').innerText = '50'; // Replace '50' with the actual number
+        function connect() {
+            // Add your connect button functionality here
+            window.location.assign(window.location+"controller.html");
+            alert('Connecting...');
+            
+            
+        }
+    </script>
+
+</body>
+</html>
